@@ -1,0 +1,27 @@
+
+h6{
+    text-align: center;
+    color:red;
+    margin: 100px;;
+    padding: 30px;
+    text-size-adjust: ;
+}
+img{
+    width: 100px;
+    height: 100;
+    row-gap: normal;
+
+}
+p{
+    text: size adjust 12px; ;
+    color: blue;
+}
+button{
+    margin-right: 100px;
+    grid-row: span;
+    color :brown;
+}
+h4{
+    size: 200px;
+    color: blueviolet ;
+}
