@@ -23,38 +23,34 @@
 <div>
      <h6>know and learn</h6>
 </div>
-    <div class="Box">
+        <div id="mainpge">
       <h5>Nam :mnal Alshammari  <img src="mmmnal.jpg"></h5>
         <p>I have experience in teaching JavaScript,<br> who wants to learn?</p>
-        <div>
-          <button onclick="myFunction()">Click </button>
-          <p id="mainpge"></p>
-</div>
-   
-
-     <div id="ahmad.jpg"></div>
+  
 
         <li>Nam :ahmad Alshammari</li><img src="ahmad.jpg">
         <br>
         <br>
         <p>I am a sports coach and I work an hour every day.<br>  Who wants to register?</p>
-    </ul>    
+    </ul>  
 </div>
+<button onclick="mainpgeHide()">hide </button>
+<button onclick="mainpgeShow()">shwo </button>
+<button onclick="mainpgeRemove()">remove </button>    
     <br>                        
       <div id="addform">
 
     
-      <input type="text" name> 
+      <input type="text" id="name">  
       <label>name</label>
       <br>
-      <input type="text"description > 
-      <label></label>
+      <input type="text" id="img" > 
+      <label>img</label>
       <br>
-    <input type="text"p>
-    <label>p</label>
-   
-      </div>
-
+    <input type="text" id="description">
+    <label>description</label>
+   <button id="btn" class="but"onclick="adduser()">add</button>
+    </div>
 
       <script src="Project_1.js"></script>
 </body>

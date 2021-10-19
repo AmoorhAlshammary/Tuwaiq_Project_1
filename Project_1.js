@@ -1,15 +1,17 @@
+const  mainpge = $("#mainpge");
+function mainpgeHide(){
+  mainpge.hide();
+}
+function mainpgeShow(){
+  mainpge.show();
+}
+function mainpgeRemove(){
+  mainpge.remove();
+}
 
+    
 
-$(document).ready(function(){
-  $('.Box').click(function(){
-  $('#mainpage').hide()
-})
-$(document).click(function(){
-  $('#mainpage').show()
-})
-
-
-    const mainbage=$()
+    const main = $("#main");
     const nameInput = $("#name");
     const imgInput = $("#img");
     const descriptionInput = $("#description");
@@ -19,31 +21,36 @@ $(document).click(function(){
         { Name: "mmmnal", img: "mmmnal.jpg", description: "p" },
         { Name: "ahmad", img: "ahmad.jpg",description : "p" }];
     
-    function renderArr (array) {
-      for (let i = 0; i < array.length; i++) {
-        const div = $ <ul`>
-        <li> Nam :${array[i].Name} img : ${array[i].img} description :${array[i].description}"></li>
-    </ul>
- 
-    mainpage.append(div);
+        function mainpage(array) {
+          for (let i = 0; i < array.length; i++) {
+            const div= $(`<div class="secondryContainer">
+            <li>Nam: ${array[i].Name}</li>
+               <img src="${array[i].img}">
+               <p> ${array[i].description}></p>
+            </div>`);
+            main.append(div);
+          }
+        }
+    
+        mainpage(users);
 
+        
+        function hideHandler() {
+          main.hide();
+        }
+        
+        function showHandler() {
+          main.show();
+        }
+        
 
-
-      }
-    }
-    renderArr (users)
-
-const mainpage = $("#mainpage")
-
-
-function hideHandler() {
-
-    mainpage.hide();
-    console.log()
-  }
-  
-  function showHandler() {
-   
-    mainbage.show();
-  }
-  
+        function add() {
+          const newuser= {
+            name: nameInput.val(),
+            img: imgInput.val(),
+            description: descriptionInput.val(),
+          };
+         users.push(newuser);
+         mainpage([newuser]);
+        }
+        
