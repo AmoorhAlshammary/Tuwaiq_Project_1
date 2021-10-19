@@ -18,8 +18,8 @@ function mainpgeRemove(){
     
     
     const users = [
-        { Name: "mmmnal", img: "mmmnal.jpg", description: "p" },
-        { Name: "ahmad", img: "ahmad.jpg",description : "p" }];
+        { Name: "Faisal", img: "pp.jpg", description: "supervisor" },
+        { Name: "Amirah", img: "aa.jpg",description : "painter" }];
     
         function mainpage(array) {
           for (let i = 0; i < array.length; i++) {
@@ -28,29 +28,23 @@ function mainpgeRemove(){
                <img src="${array[i].img}">
                <p> ${array[i].description}></p>
             </div>`);
-            main.append(div);
+            mainpge.append(div);
           }
         }
     
         mainpage(users);
 
         
-        function hideHandler() {
-          main.hide();
-        }
-        
-        function showHandler() {
-          main.show();
-        }
-        
-
-        function add() {
+          function adduser(){
           const newuser= {
-            name: nameInput.val(),
+            Name: nameInput.val(),
             img: imgInput.val(),
             description: descriptionInput.val(),
           };
          users.push(newuser);
-         mainpage([newuser]);
+         mainpge.html("")
+         mainpage(users)
+
+        //  mainpage([newuser]);
         }
         
