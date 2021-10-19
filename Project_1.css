@@ -1,10 +1,10 @@
 
 h6{
     text-align: center;
-    color:red;
+    color: black;
     margin: 100px;;
-    padding: 30px;
-    text-size-adjust: ;
+   tab-size: 200 ;
+font-size: 300px;
 }
 img{
     width: 100px;
@@ -21,7 +21,9 @@ button{
     grid-row: span;
     color :brown;
 }
-h4{
-    size: 200px;
-    color: blueviolet ;
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
