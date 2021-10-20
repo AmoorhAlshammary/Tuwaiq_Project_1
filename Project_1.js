@@ -5,7 +5,9 @@ const  mainpge = $("#mainpge");
     
     const users = [
       { Name: "Faisal", img: "pp.jpg", description: "supervisor" },
-      { Name: "Amirah", img: "aa.jpg",description : "painter" }
+      { Name: "Amirah", img: "aa.jpg",description : "painter" },
+      {Name:"mnal",img:"hb.jpg",description:"writer"},
+      {Name:"ahmad",img:"wb.jpg",description:"coach"},
     ];
     function renderArr (array) {
       for (let i = 0; i < array.length; i++) {

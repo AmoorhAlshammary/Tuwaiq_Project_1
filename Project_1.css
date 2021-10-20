@@ -21,17 +21,7 @@
 .content{
     padding: 10px;
 }
-/* #mainpag .mainpag-content div,
-#mainpag .mainpag-content img{
 
-    flex:1;
-    margin: 2px;
-}
-#mainpag .mainpag-content img{
-    width: 50;
-    margin-left: 15px ;
-    border: 5px solid;
-} */
 
 
 
@@ -63,4 +53,4 @@ button{
 
 body{
     background: url(https://www.freepik.com/blog/app/uploads/2021/07/autumn-background-rawpixel.jpg);
-}
+} 
