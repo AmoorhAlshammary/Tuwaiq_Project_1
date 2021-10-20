@@ -1,29 +1,66 @@
 
-h6{
-    text-align: center;
-    color: black;
-    margin: 100px;;
-   tab-size: 200 ;
+#mainpge{
+    padding: 20PX;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* align-items: center; */
+    justify-content: flex-end;
+    gap: 15px;
+}  
+
+.secondryContainer{
+  
+    border: 1px solid black;
+}
+
+.secondryContainer img{
+    width: 100%;
+    height: 200px;
+}
+
+.content{
+    padding: 10px;
+}
+/* #mainpag .mainpag-content div,
+#mainpag .mainpag-content img{
+
+    flex:1;
+    margin: 2px;
+}
+#mainpag .mainpag-content img{
+    width: 50;
+    margin-left: 15px ;
+    border: 5px solid;
+} */
+
+
+
+
+h1{
+    font-style: italic;
+    color: maroon;
 font-size: 300px;
 }
-img{
-    width: 100px;
-    height: 100;
-    row-gap: normal;
 
-}
 p{
-    text: size adjust 12px; ;
-    color: blue;
+    border: black;
+    color: indigo;
+    float: right;
 }
+
+
+img{
+    align-items: center;
+    width: 200px;
+    height: 200;
+}
+
 button{
-    margin-right: 100px;
+   
     grid-row: span;
     color :brown;
 }
+
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    background: url(https://www.freepik.com/blog/app/uploads/2021/07/autumn-background-rawpixel.jpg);
 }
